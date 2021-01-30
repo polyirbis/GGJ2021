@@ -58,3 +58,9 @@ sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.properties
 
+Assets/Materials/BridgeMat.mat
+Assets/Materials/Grass 1.mat
+Assets/Materials/River.mat
+Assets/Materials/TreeLeaves.mat
+Assets/Materials/TreeTrunk.mat
+Assets/Materials/UnaffectedSphere.mat
