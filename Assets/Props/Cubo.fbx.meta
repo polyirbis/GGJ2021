@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5cbb654065c473f4f96b5d9ea0ecbafe
+guid: 73a98d4eb65e9b745ba6dad0bee08fd3
 ModelImporter:
   serializedVersion: 19301
   internalIDToNameTable: []
@@ -7,8 +7,8 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: FlowersTemp
-    second: {fileID: 2100000, guid: efa719a1bed59a54fae636cf61cdc359, type: 2}
+      name: Cubo_text
+    second: {fileID: 2100000, guid: ef61c8c818883734b8327440706bcae0, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
