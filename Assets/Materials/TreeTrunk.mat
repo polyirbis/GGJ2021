@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: TreeLeaves
+  m_Name: TreeTrunk
   m_Shader: {fileID: -6465566751694194690, guid: 19c094721b986d94495cbedacccd0c03,
     type: 3}
   m_ShaderKeywords: 
@@ -52,9 +52,9 @@ Material:
     - Vector1_1C643B08: 2.27
     - Vector1_8272A0A7: 0.69
     - Vector1_955B7385: 19.69
-    - Vector1_A6F39078: 1.27
+    - Vector1_A6F39078: 1.55
     - Vector1_DA860AF2: 0
-    - Vector1_EA776CB: 0.09
+    - Vector1_EA776CB: 0.22
     - _AlphaClip: 0
     - _Blend: 0
     - _BumpScale: 1
@@ -77,8 +77,8 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - Color_39F78EDC: {r: 0.22014064, g: 0.4811321, b: 0.23464017, a: 0}
-    - Color_D1AD19A6: {r: 0.75631773, g: 0.8584906, b: 0.6600659, a: 0}
+    - Color_39F78EDC: {r: 0.4528302, g: 0.3420533, b: 0.1516554, a: 0}
+    - Color_D1AD19A6: {r: 0.6037736, g: 0.5375573, b: 0.46991813, a: 0}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}

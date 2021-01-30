@@ -203,6 +203,7 @@ GameObject:
   - component: {fileID: 622367934}
   - component: {fileID: 622367933}
   - component: {fileID: 622367936}
+  - component: {fileID: 622367937}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -306,6 +307,46 @@ MonoBehaviour:
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
+--- !u!114 &622367937
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 622367932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be76e5f14cfee674cb30b491fb72b09b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boost: 3.5
+  positionLerpTime: 0.2
+  mouseSensitivityCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0.5
+      inSlope: 0
+      outSlope: 5
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 2.5
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  rotationLerpTime: 0.01
+  invertY: 0
 --- !u!1 &662577606
 GameObject:
   m_ObjectHideFlags: 0
@@ -426,6 +467,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 9f5de8ea3cff67f439761b54fb3fae0b, type: 2}
+    - target: {fileID: 4904752459110789221, guid: e8dbf4bb358a7f44da960dc0f2af9059,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: db34f1ea0165e4f44a88fcde569e947f, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e8dbf4bb358a7f44da960dc0f2af9059, type: 3}
 --- !u!1001 &1006958027
@@ -569,6 +615,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 9f5de8ea3cff67f439761b54fb3fae0b, type: 2}
+    - target: {fileID: 4904752459110789221, guid: e8dbf4bb358a7f44da960dc0f2af9059,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: db34f1ea0165e4f44a88fcde569e947f, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e8dbf4bb358a7f44da960dc0f2af9059, type: 3}
 --- !u!1001 &1095442298
@@ -1631,6 +1682,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 9f5de8ea3cff67f439761b54fb3fae0b, type: 2}
+    - target: {fileID: 4904752459110789221, guid: e8dbf4bb358a7f44da960dc0f2af9059,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: db34f1ea0165e4f44a88fcde569e947f, type: 2}
     - target: {fileID: 7887386336985276836, guid: e8dbf4bb358a7f44da960dc0f2af9059,
         type: 3}
       propertyPath: m_Mesh
