@@ -8,8 +8,8 @@ using UnityEngine.SceneManagement;
 public class LifeBar : MonoBehaviour
 {
     public Image Meter;
-    public float Health ;
-    public float DrainRate ;
+    public float Health;
+    public float DrainRate;
     public GameObject Player;
 
     // Start is called before the first frame update
@@ -17,17 +17,16 @@ public class LifeBar : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Health = Health - (DrainRate * Time.deltaTime);
-        Meter.fillAmount = Health;
 
-        if (Health > 1f) //verifica que el valor no suba mas allá del máximo
+        if (Health > 0f) //verifica que el valor no suba mas allá del máximo
         {
-            Health = 1f;
+            Health = Health - (DrainRate * Time.deltaTime);
+            Meter.fillAmount = Health;
         }
 
-        if (Player == null)
+        if (Health <= 0)
         {
-            SceneManager.LoadScene("GameOvert");
+            SceneManager.LoadScene("End");
 
         }
     }
