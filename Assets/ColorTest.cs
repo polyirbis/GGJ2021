@@ -15,7 +15,7 @@ public class ColorTest : MonoBehaviour
     void Update()
     {
         t += Time.deltaTime;
-        t2 = Mathf.Sin(t*0.05f);
-        Shader.SetGlobalFloat("_ColorAmount",0);
+        t2 = Mathf.Sin(t*0.5f);
+        Shader.SetGlobalFloat("_ColorAmount",t2);
     }
 }
