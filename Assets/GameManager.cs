@@ -1,6 +1,9 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+
 
 public class GameManager : MonoBehaviour
 {
@@ -10,6 +13,8 @@ public class GameManager : MonoBehaviour
     float pickableCount,pickablesToWin;
     [SerializeField]
     float currentEffectDelta,desiredEffectDelta;
+    [SerializeField]
+    Text TimerText,Pickables;
 
     bool Running;
     // Start is called before the first frame update
@@ -25,6 +30,13 @@ public class GameManager : MonoBehaviour
     {
         if(Running){
             Timer += Time.deltaTime;
+            if(TimerText != null){
+                int timeInSecondsInt = (int)Timer;  //We don't care about fractions of a second, so easy to drop them by just converting to an int
+            int minutes = (int)Timer / 60;  //Get total minutes
+            int seconds = timeInSecondsInt - (minutes * 60);  //Get seconds for display alongside minutes
+            TimerText.text = minutes.ToString("D2") + ":" + seconds.ToString("D2");  //Create the string representation, where both seconds and minutes are at minimum 2 digits
+
+            }
             if(Timer > TimeLimit){
                 if(pickableCount>=pickablesToWin){
                     EndGame(true);
@@ -56,6 +68,9 @@ public class GameManager : MonoBehaviour
     public void PickedPotion(){
         pickableCount++;
         desiredEffectDelta = (float)pickableCount/(float)pickablesToWin;
+        if(Pickables != null){
+            Pickables.text = pickableCount.ToString();
+        }
         if(pickableCount >= pickablesToWin){
             EndGame(true);
         }
