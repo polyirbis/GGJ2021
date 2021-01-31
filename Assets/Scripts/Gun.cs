@@ -26,7 +26,6 @@ public class Gun : MonoBehaviour
     private bool isrelouding = false;
 
 
-   public Camera fpsCam;
     public ParticleSystem mussflassh;
     public GameObject impacefects;
 
