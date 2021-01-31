@@ -11,7 +11,7 @@ public class inventario : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Enemy"))
         {
-            Meter.Health += 0.25f;
+            Meter.Health -= 0.25f;
             Destroy(collision.gameObject);
             //cambio sprite
         }
@@ -19,7 +19,7 @@ public class inventario : MonoBehaviour
         {
             if (Meter.Health <= 1)
             {
-                Meter.Health -= 0.25f;
+                Meter.Health += 0.25f;
             }
             Destroy(collision.gameObject);
             //cambio sprite           

@@ -24,9 +24,9 @@ public class Star : MonoBehaviour
             Meter.fillAmount = Health;
         }
 
-        if (Health <= 0)
+        if (Health >= 1)
         {
-        //    SceneManager.LoadScene("End");
+            SceneManager.LoadScene("End");
 
         }
     }
