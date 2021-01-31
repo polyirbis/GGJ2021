@@ -13,8 +13,10 @@ public class Potion : MonoBehaviour
     GameManager gameManager;
     [SerializeField]
     float rotationSpeed;
+    //[SerializeField]
+   // GameObject particle, Visual;
     [SerializeField]
-    GameObject particle, Visual;
+    Animator animator;
     // Start is called before the first frame update
     void Start()
     {
@@ -41,14 +43,15 @@ public class Potion : MonoBehaviour
     }
 
     void PickUp(){
-        particle.SetActive(true);
+        // particle.SetActive(true);
+        animator.SetBool("Desaparecer", true);
         potionState = State.PickedUp;
         gameManager.PickedPotion();
         Invoke("Disappear",2f);
     }
 
     void Disappear(){
-        Visual.SetActive(false);
+        //Visual.SetActive(false);
         Invoke("TurnOff",1f);
     }
 
