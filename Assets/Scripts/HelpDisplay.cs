@@ -5,7 +5,7 @@ using UnityEngine;
 public class HelpDisplay : MonoBehaviour
 {
     public GameObject HelpWindow;
-    public GameObject pollen;
+ //   public GameObject pollen;
     public GameObject play;
 
     private bool IsActive = false;
@@ -16,7 +16,7 @@ public class HelpDisplay : MonoBehaviour
         {
             HelpWindow.SetActive(true);
 
-            pollen.SetActive(false);
+          //  pollen.SetActive(false);
             play.SetActive(false);
     
 
@@ -26,7 +26,7 @@ public class HelpDisplay : MonoBehaviour
         {
             HelpWindow.SetActive(false);
 
-            pollen.SetActive(true);
+           // pollen.SetActive(true);
             play.SetActive(true);
    
 
