@@ -216,7 +216,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   delayBeforeLoading: 5
-  sceneNameToLoad: Main
+  sceneNameToLoad: LayoutFinal
 --- !u!1 &260925566
 GameObject:
   m_ObjectHideFlags: 0

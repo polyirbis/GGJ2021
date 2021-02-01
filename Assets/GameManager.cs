@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 
 public class GameManager : MonoBehaviour
@@ -15,6 +16,8 @@ public class GameManager : MonoBehaviour
     float currentEffectDelta,desiredEffectDelta;
     [SerializeField]
     Text TimerText,Pickables;
+    [SerializeField]
+    string victoryScene,DefeatScene;
 
     bool Running;
     // Start is called before the first frame update
@@ -60,8 +63,10 @@ public class GameManager : MonoBehaviour
         Running = false;
         if(outcome == true){
             Debug.Log("Player Won!");
+            SceneManager.LoadScene(victoryScene);
         }else{
             Debug.Log("Player Lost");
+            SceneManager.LoadScene(DefeatScene);
         }
     }
 
